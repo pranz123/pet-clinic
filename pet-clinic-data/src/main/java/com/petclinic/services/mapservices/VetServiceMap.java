@@ -1,4 +1,4 @@
-package com.petclinic.services.map;
+package com.petclinic.services.mapservices;
 
 import com.petclinic.model.Speciality;
 import com.petclinic.model.Vet;
