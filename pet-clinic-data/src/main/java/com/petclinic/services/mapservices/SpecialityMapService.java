@@ -7,6 +7,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+/**
+ * Map Implementation of Speciality Service
+ * @author Pranjal
+ *
+ */
 @Service
 @Profile({"default","map"})
 public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService {

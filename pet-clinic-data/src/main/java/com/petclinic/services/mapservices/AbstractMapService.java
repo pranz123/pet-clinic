@@ -4,6 +4,14 @@ import com.petclinic.model.BaseEntity;
 
 import java.util.*;
 
+/**
+ * Map Implementation of BaseEntity
+ * 
+ * @author Pranjal
+ *
+ * @param <T>
+ * @param <ID>
+ */
 public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 
     protected Map<Long, T> map = new HashMap<>();

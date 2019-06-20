@@ -1,14 +1,20 @@
 package com.petclinic.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+/**
+ * PetType POJO
+ * @author Pranjal
+ *
+ */
 @Getter
 @Setter
 @NoArgsConstructor
@@ -17,6 +23,13 @@ import javax.persistence.Table;
 @Table(name = "types")
 public class PetType extends BaseEntity{
 
+	@Builder
+	public PetType(Long id, String name) {
+		super(id);
+		this.name = name;
+		
+	}
+	
     @Column(name = "name")
     private String name;
 

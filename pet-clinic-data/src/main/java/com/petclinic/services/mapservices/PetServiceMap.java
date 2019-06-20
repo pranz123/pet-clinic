@@ -7,9 +7,15 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+/**
+ * Map Implementation of Pet Service
+ * @author Pranjal
+ *
+ */
 @Service
 @Profile({"default","map"})
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
+	
     @Override
     public Set<Pet> findAll() {
         return super.findAll();

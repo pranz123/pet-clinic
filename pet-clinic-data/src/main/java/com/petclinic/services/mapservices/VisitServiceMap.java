@@ -7,6 +7,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+/**
+ * Map Implementation of Visit Service
+ * 
+ * @author Pranjal
+ *
+ */
 @Service
 @Profile({"default","map"})
 public class VisitServiceMap extends AbstractMapService<Visit, Long> implements VisitService{
