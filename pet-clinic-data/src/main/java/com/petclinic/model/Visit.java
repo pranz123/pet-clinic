@@ -11,6 +11,7 @@ import javax.persistence.Table;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 /**
  * Visit POJO
@@ -22,6 +23,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(exclude = {"pet"})
 @Entity
 @Table(name = "visits")
+@NoArgsConstructor
 public class Visit extends BaseEntity {
 
     @Column(name = "visit_date")
