@@ -10,8 +10,10 @@ import javax.persistence.Table;
 
 import lombok.Builder;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.AllArgsConstructor;
+import lombok.Setter;
 
 /**
  * Visit POJO
@@ -19,15 +21,17 @@ import lombok.NoArgsConstructor;
  * @author Pranjal
  *
  */
-@Data
-@EqualsAndHashCode(exclude = {"pet"})
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "visits")
-@NoArgsConstructor
 public class Visit extends BaseEntity {
 
     @Column(name = "visit_date")
     private LocalDate date;
+    
     @Column(name = "description")
     private String description;
 
@@ -43,6 +47,10 @@ public class Visit extends BaseEntity {
     	if(null != pet) {
     		this.pet = pet;
     	}
+    }
+    
+    public LocalDate getDate() {
+        return date;
     }
 
 }
