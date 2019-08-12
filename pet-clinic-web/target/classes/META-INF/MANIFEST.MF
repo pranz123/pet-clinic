@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
+Built-By: pranj
+Build-Jdk: 11.0.4
 Implementation-Title: pet-clinic-web
 Implementation-Version: 0.0.4
-Built-By: pranjal.a.kumar
 Implementation-Vendor-Id: com.petclinic
-Build-Jdk: 1.8.0_211
-Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
- ot-starter-parent/pet-clinic/pet-clinic-web
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/pet-clinic/pet-clinic-web
 Created-By: Maven Integration for Eclipse
 
